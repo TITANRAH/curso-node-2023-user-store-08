@@ -1,0 +1,38 @@
+primero npm install
+segundo docker compose up -d para levantar imagen de mongo 
+
+crear la carpeta de presentation 
+va server 
+la ruta principal 
+y la carpeta de los distintos entes en este caso auth 
+
+auth lleva 
+controller 
+rutas a los endpoint
+
+crear carpeta data 
+crear nueva carpeta dentro de data en este caso mongo
+
+crear archivo en mongo mongo-database.ts
+crear la coneccioon en ese archivo
+
+luego npm i mongoose
+
+terminar la conexion de mongo como esta en el archivo
+
+luego en el app llamar a la conexion 
+
+poner los argumentos declarados en esta conexion lo que lleva a crear 
+las variables de entorno 
+lo que asu vez lleva a configurar los envs para tiparlas en config envs.ts
+
+
+crear carpeta models y crear el modelo o esquema en este caso user 
+
+crear entidad user 
+
+en entidad hago el fromObject para mapear a mi entidad
+
+creo el dto para validar datos en carpeta domain dtos auth register-user.dto.ts 
+
+creo los servicios en presentation services auth.service.ts 
